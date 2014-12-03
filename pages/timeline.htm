@@ -1,0 +1,13 @@
+<div>
+	<button ng-click="refreshTimeline()" id="getTimelineButton" type="button" class="btn btn-info" style="display:none;">Get My Timeline</button>
+	<button ng-click="signOut()" id="signOut" type="button" class="btn btn-link" style="display:none;">Sign Out</button>
+</div>
+<div class="row">
+	<div class="col-xs-12" id="results">
+		<div class="row" ng-repeat="t in tweets">
+			
+			<twitter-timeline-view tweet-item="t"></twitter-timeline-view>
+
+		</div>
+	</div>
+</div>
