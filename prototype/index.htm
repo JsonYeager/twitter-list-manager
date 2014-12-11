@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rapid Prototyping - Page 1</title>
+    <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <section>
+            <header>
+                <h1><a href="/">Manage your Twitter Lists</a></h1>
+            </header>
+        </section>
+        <div class="row center-block">
+            <form class="form-inline">
+                Filters:
+                <div class="form-group">
+                    <label for="NotOnLists">Show users that are not assigned to any list: </label>
+                    <input type="checkbox" class="form-control" id="NotOnLists" />
+                </div>
+                <div class="form-group">
+                    <label for="Lists">Show members on list: </label>
+                    <select class="form-control" id="Lists">
+                        <option selected="selected">List 1</option>
+                        <option>List 2</option>
+                        <option>List 3</option>
+                        <option>List 4</option>
+                        <option>List 5</option>
+                        <option>List 6</option>
+                        <option>List 7</option>
+                        <option>List 8</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+        <div class="row">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th><span class="glyphicon glyphicon-sort-by-alphabet"></span> User</th>
+                        <th>List 1</th>
+                        <th>List 2</th>
+                        <th>List 3</th>
+                        <th>List 4</th>
+                        <th>List 5</th>
+                        <th>List 6</th>
+                        <th>List 7</th>
+                        <th>List 8</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>User A</td>
+                        <td>
+                            <button class="btn btn-success"><span class="glyphicon glyphicon-check"></span> Added</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-danger">Add</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-success"><span class="glyphicon glyphicon-check"></span> Added</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-danger">Add</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-success"><span class="glyphicon glyphicon-check"></span> Added</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-danger">Add</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-success"><span class="glyphicon glyphicon-check"></span> Added</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-danger">Add</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>User B</td>
+                        <td>
+                            <button class="btn btn-danger">Add</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-success"><span class="glyphicon glyphicon-check"></span> Added</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-danger">Add</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-success"><span class="glyphicon glyphicon-check"></span> Added</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-danger">Add</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-success"><span class="glyphicon glyphicon-check"></span> Added</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-danger">Add</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-success"><span class="glyphicon glyphicon-check"></span> Added</button>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="9">Footer</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
+    <script type="text/javascript">
+    var twitterListManager = {
+
+        doToolTips: true,
+
+        init: function() {
+            if (this.doToolTips) {
+                twitterListManager.addToolTips();
+            }
+        },
+        addToolTips: function() {
+            $('button.btn-success').each(
+                function() {
+                    $(this).attr('data-toggle', 'tooltip');
+                    $(this).attr('data-original-title', 'Click to Remove');
+                    console.debug('this is here: ' + $(this).attr('data-toggle'));
+                }
+            );
+            $('[data-toggle="tooltip"]').tooltip();
+        }
+    };
+
+    twitterListManager.init();
+    </script>
+</body>
+
+</html>
