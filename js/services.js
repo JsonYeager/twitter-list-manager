@@ -1,12 +1,13 @@
 // Services
-twitterListManagerApp.factory('twitterService', function($q){
-	var authorizationResult = false;
+twitterListManagerApp.factory('twitterService', function($q) {
+    var authorizationResult = false;
 
     return {
         initialize: function() {
-            //initialize OAuth.io with public key of the application
-            OAuth.initialize('0a_0EVaAXTy3Rbjw2nwSdutxohk', {cache:true});
-            //try to create an authorization result when the page loads, this means a returning user won't have to click the twitter button again
+            // initialize OAuth.io with public key of the application
+            OAuth.initialize('0a_0EVaAXTy3Rbjw2nwSdutxohk', { cache: true });
+            // try to create an authorization result when the page loads, 
+            // this means a returning user won't have to click the twitter button again
             authorizationResult = OAuth.create('twitter');
         },
         isReady: function() {
@@ -14,7 +15,8 @@ twitterListManagerApp.factory('twitterService', function($q){
         },
         connectTwitter: function() {
             var deferred = $q.defer();
-            OAuth.popup('twitter', {cache:true}, function(error, result) { //cache means to execute the callback if the tokens are already present
+            OAuth.popup('twitter', { cache: true }, function(error, result) { 
+                //cache means to execute the callback if the tokens are already present
                 if (!error) {
                     console.debug('result: ' + result);
                     authorizationResult = result;
@@ -30,12 +32,12 @@ twitterListManagerApp.factory('twitterService', function($q){
             OAuth.clearCache('twitter');
             authorizationResult = false;
         },
-        getLatestTweets: function () {
+        getLatestTweets: function() {
             //create a deferred object using Angular's $q service
             var deferred = $q.defer();
             var promise = authorizationResult.get('/1.1/statuses/home_timeline.json').done(function(data) { //https://dev.twitter.com/docs/api/1.1/get/statuses/home_timeline
                 //when the data is retrieved resolved the deferred object
-                deferred.resolve(data)
+                deferred.resolve(data);
             });
             //return the promise of the deferred object
             return deferred.promise;
