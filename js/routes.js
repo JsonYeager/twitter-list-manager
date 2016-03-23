@@ -1,5 +1,5 @@
 // Configs
-twitterListManagerApp.config(function($routeProvider) {
+twitterListManagerApp.config(function($routeProvider, $locationProvider) {
 
     $routeProvider.when('/', {
         controller: 'homeController',
@@ -7,8 +7,8 @@ twitterListManagerApp.config(function($routeProvider) {
     }).when('/timeline', {
         controller: 'homeController',
         templateUrl: 'pages/timeline.htm'
-    }).when('/timeline/:action', {
-        controller: 'homeController',
-        templateUrl: 'pages/timeline.htm'
-    });
+    }).otherwise({redirectTo:'pages/otherwise.htm'});
+
+
+    $locationProvider.html5Mode(true);
 });
