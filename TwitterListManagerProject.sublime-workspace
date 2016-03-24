@@ -3,6 +3,14 @@
 	{
 		"selected_items":
 		[
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"$loca",
+				"$location	AngularJS"
+			]
 		]
 	},
 	"buffers":
@@ -15,10 +23,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 392.0,
-		"last_filter": "",
+		"height": 343.0,
+		"last_filter": "json",
 		"selected_items":
 		[
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
 			[
 				"pret",
 				"HTMLPrettify"
@@ -48,7 +60,7 @@
 				"Set Syntax: HTML"
 			]
 		],
-		"width": 512.0
+		"width": 708.0
 	},
 	"console":
 	{
@@ -70,21 +82,25 @@
 	"expanded_folders":
 	[
 		"/C/Users/jason/Development/twitter-list-manager",
-		"/C/Users/jason/Development/twitter-list-manager/js/oAuth",
-		"/C/Users/jason/Development/twitter-list-manager/pages"
+		"/C/Users/jason/Development/twitter-list-manager/directives",
+		"/C/Users/jason/Development/twitter-list-manager/js",
+		"/C/Users/jason/Development/twitter-list-manager/pages",
+		"/C/Users/jason/Development/twitter-list-manager/prototype"
 	],
 	"file_history":
 	[
+		"/C/Users/jason/Development/twitter-list-manager/js/controllers.js",
+		"/C/Users/jason/Development/twitter-list-manager/js/services.js",
+		"/C/Users/jason/Development/twitter-list-manager/testData.json",
+		"/C/Users/jason/Development/twitter-list-manager/index.htm",
+		"/C/Users/jason/Development/twitter-list-manager/pages/home.htm",
+		"/C/Users/jason/Development/twitter-list-manager/pages/otherwise.htm",
 		"/C/Users/jason/Development/twitter-list-manager/js/app.js",
 		"/C/Users/jason/Development/twitter-list-manager/js/routes.js",
-		"/C/Users/jason/Development/twitter-list-manager/pages/home.htm",
-		"/C/Users/jason/Development/twitter-list-manager/js/services.js",
-		"/C/Users/jason/Development/twitter-list-manager/js/controllers.js",
 		"/C/Users/jason/Development/twitter-list-manager/pages/timeline.htm",
 		"/C/Users/jason/Development/twitter-list-manager/js/directives.js",
-		"/C/Users/jason/Development/twitter-list-manager/index.htm",
-		"/C/Users/jason/Development/twitter-list-manager/prototype/index.htm",
 		"/C/Users/jason/Development/twitter-list-manager/directives/timelineView.htm",
+		"/C/Users/jason/Development/twitter-list-manager/prototype/index.htm",
 		"/C/Users/pp78783/Web Projects/TwitterListManager/TwitterListManagerProject.sublime-project",
 		"/C/Users/pp78783/My Programs/Sublime Text 3/Data/Packages/Default/Preferences.sublime-settings",
 		"/C/Users/pp78783/Web Projects/TwitterListManager/js/oAuth/oauth.js",

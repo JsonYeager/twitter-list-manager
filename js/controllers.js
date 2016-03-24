@@ -17,10 +17,8 @@ twitterListManagerApp.controller('homeController', ['$scope', '$location', 'twit
         twitterService.connectTwitter().then(function() {
             if (twitterService.isReady()) {
                 //if the authorization is successful, hide the connect button and display the tweets
-                $('#connectButton').fadeOut(function() {
-                    $scope.refreshTimeline();
-                    $location.path('timeline');
-                });
+                $scope.refreshTimeline();
+                $location.path('timeline');
             }
         });
     }
