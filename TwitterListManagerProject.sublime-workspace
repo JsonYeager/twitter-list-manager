@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"ng-class",
+				"ng-class-odd	AngularJS"
+			],
+			[
+				"ng-clas",
+				"ng-class-even	AngularJS"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
 				"margin",
 				"margin-top"
 			],
@@ -15,6 +27,38 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "pages/timeline.htm",
+			"settings":
+			{
+				"buffer_size": 960,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "pages/home.htm",
+			"settings":
+			{
+				"buffer_size": 406,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/services.js",
+			"settings":
+			{
+				"buffer_size": 2054,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/controllers.js",
+			"settings":
+			{
+				"buffer_size": 1436,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -89,11 +133,11 @@
 	],
 	"file_history":
 	[
+		"/C/Users/jason/Development/twitter-list-manager/pages/home.htm",
 		"/C/Users/jason/Development/twitter-list-manager/js/controllers.js",
 		"/C/Users/jason/Development/twitter-list-manager/js/services.js",
 		"/C/Users/jason/Development/twitter-list-manager/testData.json",
 		"/C/Users/jason/Development/twitter-list-manager/index.htm",
-		"/C/Users/jason/Development/twitter-list-manager/pages/home.htm",
 		"/C/Users/jason/Development/twitter-list-manager/pages/otherwise.htm",
 		"/C/Users/jason/Development/twitter-list-manager/js/app.js",
 		"/C/Users/jason/Development/twitter-list-manager/js/routes.js",
@@ -147,8 +191,127 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "pages/timeline.htm",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 960,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								134,
+								228
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "pages/home.htm",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 406,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								406,
+								406
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "js/services.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2054,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1382,
+								1382
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 320.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "js/controllers.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1436,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1223,
+								1223
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 73.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
 			]
 		}
 	],

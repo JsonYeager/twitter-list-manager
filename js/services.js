@@ -29,7 +29,9 @@ twitterListManagerApp.factory('twitterService', function($q) {
             return deferred.promise;
         },
         clearCache: function() {
-            OAuth.clearCache('twitter');
+            if(authorizationResult === true){
+                OAuth.clearCache('twitter');
+            }
             authorizationResult = false;
         },
         getLatestTweets: function() {

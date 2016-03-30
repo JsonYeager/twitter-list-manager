@@ -26,7 +26,9 @@ twitterListManagerApp.controller('homeController', ['$scope', '$location', 'twit
     //sign out clears the OAuth cache, the user will have to reauthenticate when returning
     $scope.signOut = function() {
         twitterService.clearCache();
-        $scope.tweets.length = 0;
+        if($scope.tweets && $scope.tweets.length > 0){
+            $scope.tweets.length = 0;
+        }
         $location.path('/');
     }
 
